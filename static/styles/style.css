@@ -32,12 +32,12 @@ body {
 
 @keyframes PopUp {
   0% {
-      opacity: 0;
-      transform: scale(0);
+    opacity: 0;
+    transform: scale(0);
   }
   100% {
-      opacity: 1;
-      transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -135,65 +135,70 @@ body {
 
 @keyframes fadeInText {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
+}
+
+.center-container {
+  position: fixed;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
 }
 
 .rotating-image {
   width: 500px;
-  height: 900px; 
-  top: 30%;
-  left: 10%;
-
-  border-radius: 50%; 
+  height: 900px;
+  border-radius: 50%;
   animation: rotate 10s linear infinite;
 }
 
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes fly {
   0% {
-      transform: translateX(100vw) translateY(0) rotate(0deg);
+    transform: translateX(100vw) translateY(0) rotate(0deg);
   }
   25% {
-      transform: translateX(75vw) translateY(-10vh) rotate(-10deg);
+    transform: translateX(75vw) translateY(-10vh) rotate(-10deg);
   }
   50% {
-      transform: translateX(50vw) translateY(20vh) rotate(10deg);
+    transform: translateX(50vw) translateY(20vh) rotate(10deg);
   }
   75% {
-      transform: translateX(25vw) translateY(-15vh) rotate(-15deg);
+    transform: translateX(25vw) translateY(-15vh) rotate(-15deg);
   }
   100% {
-      transform: translateX(-100vw) translateY(0) rotate(0deg);
+    transform: translateX(-100vw) translateY(0) rotate(0deg);
   }
 }
 
 @keyframes fly-left-right {
   0% {
-      transform: translateX(-100vw) translateY(0) rotate(0deg);
+    transform: translateX(-100vw) translateY(0) rotate(0deg);
   }
   25% {
-      transform: translateX(-75vw) translateY(-10vh) rotate(10deg);
+    transform: translateX(-75vw) translateY(-10vh) rotate(10deg);
   }
   50% {
-      transform: translateX(-50vw) translateY(20vh) rotate(-10deg);
+    transform: translateX(-50vw) translateY(20vh) rotate(-10deg);
   }
   75% {
-      transform: translateX(-25vw) translateY(-15vh) rotate(15deg);
+    transform: translateX(-25vw) translateY(-15vh) rotate(15deg);
   }
   100% {
-      transform: translateX(100vw) translateY(0) rotate(0deg);
+    transform: translateX(100vw) translateY(0) rotate(0deg);
   }
 }
 
