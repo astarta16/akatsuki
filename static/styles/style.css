@@ -176,8 +176,32 @@ body {
   }
 }
 
+@keyframes fly-left-right {
+  0% {
+      transform: translateX(-100vw) translateY(0) rotate(0deg);
+  }
+  25% {
+      transform: translateX(-75vw) translateY(-10vh) rotate(10deg);
+  }
+  50% {
+      transform: translateX(-50vw) translateY(20vh) rotate(-10deg);
+  }
+  75% {
+      transform: translateX(-25vw) translateY(-15vh) rotate(15deg);
+  }
+  100% {
+      transform: translateX(100vw) translateY(0) rotate(0deg);
+  }
+}
+
 .fly-animation {
   position: absolute;
   width: 200px;
   animation: fly 10s linear infinite;
+}
+
+.fly-animation-left-right {
+  position: absolute;
+  width: 200px;
+  animation: fly-left-right 10s linear infinite;
 }
